@@ -1,0 +1,23 @@
+1. Selenium and Playwright Architecture
+Explain the purpose of the following components:
+a. Selenium WebDriver and WebElement.
+b. Playwright Browser, BrowserContext, Page and Locator.
+c. Describe how Selenium and Playwright identify and interact with webpage elements.
+
+a. 
+Selenium webdriver: Selenium webdriver is an intermediate system which is inbetween test programming language and 
+the browser. It is used to automate web applications for testing purposes, allowing developers to write scripts in various programming languages to control the browser and perform actions like clicking buttons, entering text, and navigating through pages.
+
+web element:  These are  the html elements used in the website to make website. 
+              for example: input, button, dropdown etc..
+
+b.
+Playwright Browser: The Browser component in Playwright represents an instance of a web browser (like Chromium, Firefox, or WebKit).
+                    It allows you to launch and control the browser for automated testing.
+Page              : This is a new session or window created using method
+                    browser.newPage(). It represents a single tab or page in the browser where you can perform actions and interact with web elements.
+Locator: A Locator in Playwright is a way to identify and interact with specific elements on a webpage. It allows you to find elements using various selectors (like CSS selectors, XPath, etc.) 
+        and perform actions on them, such as clicking, typing, or retrieving their properties.
+c.
+Selenium and Playwright identify and interact with webpage using locators. In playwright using .locator() method 
+and in Selenium using By() method.
